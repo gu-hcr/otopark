@@ -8,7 +8,7 @@ import java.util.Collection;
 
 public class UserDTO {
     private Long id;
-    private String userName;
+    private String username;
     private String firstName;
     private String lastName;
     private String email;
@@ -16,7 +16,7 @@ public class UserDTO {
 
     public UserDTO(User u){
         this.id = u.getId();
-        this.userName = u.getUsername();
+        this.username = u.getUsername();
         this.firstName = u.getFirstName();
         this.lastName = u.getLastName();
         this.email = u.getEmail();
@@ -27,8 +27,8 @@ public class UserDTO {
         return id;
     }
 
-    public String getUserName() {
-        return userName;
+    public String getUsername() {
+        return username;
     }
 
     public String getFirstName() {
@@ -47,8 +47,8 @@ public class UserDTO {
         this.id = id;
     }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
+    public void setUsername(String userName) {
+        this.username = userName;
     }
 
     public void setFirstName(String firstName) {
